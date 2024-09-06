@@ -16,18 +16,18 @@ app.listen(ServerConfig.PORT, async () => {
     console.log(`successfully started the server on PORT : ${ServerConfig.PORT}`);
       Logger.info('Successfully started the server','root',{});
 
-      try {
-        const response = await mailsender.sendMail({
-          from:ServerConfig.GMAIL_EMAIL,
-          to:'omraj72470@gmail.com',
-          subject:'Is the Service working fine',
-          text:'yes it is working'
-        })
+      // try {
+      //   const response = await mailsender.sendMail({
+      //     from:ServerConfig.GMAIL_EMAIL,
+      //     to:'omraj72470@gmail.com',
+      //     subject:'Is the Service working fine',
+      //     text:'yes it is working'
+      //   })
 
-        console.log(response);
-      } catch (error) {
-        console.log(error);
+      //   console.log(response);
+      // } catch (error) {
+      //   console.log(error);
         
-      }
+      // }
 })
 
